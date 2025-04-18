@@ -27,13 +27,6 @@ const { Content,  remarkPluginFrontmatter} = await render(entry);
       {entry.data.description}
     </p>
     <div class="flex gap-4 mb-6">
-      <Image
-        src={identity.logo}
-        alt={identity.name}
-        width={40}
-        height={40}
-        class="w-[40px] aspect-square object-cover rounded-full"
-      />
       <div>
         <p class="font-medium">{identity.name}</p>
         <p class="opacity-60">
@@ -43,13 +36,6 @@ const { Content,  remarkPluginFrontmatter} = await render(entry);
         </p>
       </div>
     </div>
-    <Image
-      src={entry.data.image.url}
-      alt={entry.data.image.alt}
-      width={800}
-      height={300}
-      class="apsect-video w-full rounded-xl mb-10"
-    />
     <article
       class="prose prose-invert prose-a:text-blue-300 prose-a:underline-offset-4 prose-headings:mb-2 prose-p:text-[#b3b3b3]"
     >

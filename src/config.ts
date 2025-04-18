@@ -176,8 +176,8 @@ export const projectsPageContent: ProjectPageContent = {
 export const blogPageContent: BlogPageContent = {
   seo: {
     title: "blog | adinfahru",
-    description: "Thoughts, stories and ideas.",
+    description: "thoughts, stories and ideas.",
     image: identity.logo,
   },
-  subtitle: "Thoughts, stories and ideas.",
+  subtitle: "thoughts, stories and ideas.",
 };
