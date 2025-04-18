@@ -75,6 +75,7 @@ export type Project = {
   year: string;
   url: string;
   highlighted?: boolean;
+  tags?: string[];
 };
 
 export type ProjectPageContent = {

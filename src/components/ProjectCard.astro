@@ -1,13 +1,13 @@
 ---
 import { Image } from "astro:assets";
 import type { Project } from "../types/config";
-import {marked} from "marked"
+import { marked } from "marked";
 
 type Props = Project;
 
-const { title, description, image, year, url } = Astro.props;
+const { title, description, image, year, url, tags } = Astro.props;
 
-const htmlDescription = marked.parse(description)
+const htmlDescription = marked.parse(description);
 ---
 
 <a
@@ -29,8 +29,19 @@ const htmlDescription = marked.parse(description)
       <h2 class="font-medium">{title}</h2>
       <span class="opacity-60">· {year}</span>
     </div>
-    <div class="opacity-60">
+    <div class="opacity-60 text-sm text-justify">
       <Fragment set:html={htmlDescription} />
     </div>
+    {
+      Array.isArray(tags) && (
+        <div class="flex flex-wrap gap-2 mt-2">
+          {tags.map((tag) => (
+            <span class="bg-indigo-900 text-white font-bold text-xs px-2 py-1 rounded">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )
+    }
   </div>
 </a>
