@@ -208,11 +208,11 @@ export const projectsPageContent: ProjectPageContent = {
     },
     {
       title: "phising-url-detection",
-      description: "phishing url detection with three different machine learning model's, for Turnamen Sains Data Nasional 2023. deployment using nginx on ubuntu 22.04",
+      description: "phishing url detection with three different machine learning model's (gradient boosting, multilayer perceptron, catboost), for Turnamen Sains Data Nasional 2023.",
       image: "/webv2.png",
       year: "2023",
       url: "https://github.com/adinfahru/phishing-url-detection",
-      tags: ["python", "flask", "gradient boosting", "multilayer perceptron", "catboost"],
+      tags: ["python", "flask", "bootstrap"],
       highlighted: true
     },
   ],
