@@ -154,7 +154,7 @@ export const projectsPageContent: ProjectPageContent = {
       year: "2025",
       url: "https://github.com/adinfahru/web-portofolio-v2",
       highlighted: true,
-      tags: ["astro", "react", "typescript", "tailwind", "reactbits"]
+      tags: ["astro", "react", "typescript", "tailwind", "reactbits", "gsap"]
     },
     {
       title: "simple-webRTC", 
