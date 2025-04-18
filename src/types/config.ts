@@ -28,6 +28,7 @@ export type HomePageContent = {
   role: string;
   description: string;
   socialLinks: SocialLink[];
+  location: string;
   links: {
     title: string;
     url: string;

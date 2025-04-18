@@ -9,63 +9,69 @@ import type {
 } from "./types/config";
 
 export const identity: Identity = {
-  name: "Tim Witzdam",
-  logo: "/logo.webp",
-  email: "tim@witzdam.com",
+  name: "adinfahru",
+  logo: "/code.png",
+  email: "mohamad.fahrudin18@gmail.com",
 };
 
 export const navBarLinks: NavBarLink[] = [
   {
-    title: "Home",
+    title: "/home",
     url: "/",
   },
   {
-    title: "About",
+    title: "/about",
     url: "/about",
   },
   {
-    title: "Projects",
+    title: "/projects",
     url: "/projects",
   },
   {
-    title: "Blog",
+    title: "/blog",
     url: "/blog",
   },
 ];
 
 export const socialLinks: SocialLink[] = [
   {
-    title: "GitHub",
-    url: "https://github.com/TimWitzdam",
+    title: "",
+    url: "https://github.com/adinfahru",
     icon: "mdi:github",
     external: true,
   },
   {
-    title: "Mail",
-    url: "mailto:tim@witzdam.com",
-    icon: "mdi:email",
+    title: "",
+    url: "https://www.linkedin.com/in/mohamadfahrudin/",
+    icon: "mdi:linkedin",
+  },
+  {
+    title: "",
+    url: "mohamad.fahrudin18@gmail.com",
+    icon: "mdi:gmail",
   },
 ];
 
 // Home (/)
 export const homePageContent: HomePageContent = {
   seo: {
-    title: "Tim Witzdam",
+    title: "Mohamad Fahrudin",
     description:
       "Full time student from Germany who loves building cool things using code.",
     image: identity.logo,
   },
-  role: "Student & Software Developer",
+  role: "student & software engineer",
+  location: "bandung, indonesia",
   description:
-    "I'm Tim Witzdam, a full time student from Germany who also loves building cool things using code.",
+    "Hi!, I'm Mohamad Fahrudin — a student who loves building full-stack web apps, with a special interest in front-end. I enjoy crafting clean, user-friendly interfaces, and lately I've been diving into AI and machine learning to explore how they can make apps smarter and more intuitive.",
   socialLinks: socialLinks,
   links: [
     {
-      title: "My Projects",
+      title: "see my projects",
       url: "/projects",
     },
     {
-      title: "About Me",
+      title: "get to know me",
       url: "/about",
     },
   ],
