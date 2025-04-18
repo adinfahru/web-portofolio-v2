@@ -35,18 +35,18 @@ export const navBarLinks: NavBarLink[] = [
 
 export const socialLinks: SocialLink[] = [
   {
-    title: "",
+    title: "Github",
     url: "https://github.com/adinfahru",
     icon: "mdi:github",
     external: true,
   },
   {
-    title: "",
+    title: "LinkedIn",
     url: "https://www.linkedin.com/in/mohamadfahrudin/",
     icon: "mdi:linkedin",
   },
   {
-    title: "",
+    title: "Gmail",
     url: "mohamad.fahrudin18@gmail.com",
     icon: "mdi:gmail",
   },
@@ -71,7 +71,7 @@ export const homePageContent: HomePageContent = {
       url: "/projects",
     },
     {
-      title: "get to know me",
+      title: "my work experience",
       url: "/about",
     },
   ],
@@ -80,18 +80,21 @@ export const homePageContent: HomePageContent = {
 // About (/about)
 export const aboutPageContent: AboutPageContent = {
   seo: {
-    title: "About | Tim Witzdam",
+    title: "about | adinfahru",
     description:
-      "Full time student from Germany who loves building cool things using code.",
+      "Full time student from Indonesia who loves building cool things.",
     image: identity.logo,
   },
-  subtitle: "Some information about myself",
+  subtitle: "some information about myself",
   about: {
     description: `
-I'm Tim Witzdam, a full time student from Germany who also loves building cool things using code.
+Full time student from Indonesia who loves building cool things.
 <br/><br/>
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque placeat est architecto tempora voluptatem sit suscipit aspernatur? <br/><br/>
-Facere quibusdam reiciendis, distinctio sunt praesentium error accusantium consectetur nemo vero officia itaque.`, // Markdown is supported
+Fahrudin is a final-year Information Systems student focusing on full-stack development, with a special interest in front-end technologies. He has a strong foundation in web development and enjoys designing user-friendly interfaces and building scalable applications, particularly using the React ecosystem.
+<br/><br/>
+Recently, Fahrudin has been delving into the exciting realms of AI and machine learning. He's eager to explore how these technologies can be integrated into his development work to enhance user experiences.
+<br/><br/>
+Fahrudin is committed to staying updated with the latest tech trends and is always ready to tackle new challenges. As he transitions from academia to the professional world, he’s looking to join a dynamic team where he can apply his skills and make a meaningful contribution to innovative projects in the tech industry.`,
     image_l: {
       url: "/demo-1.jpg",
       alt: "Left Picture",
@@ -102,25 +105,30 @@ Facere quibusdam reiciendis, distinctio sunt praesentium error accusantium conse
     },
   },
   work: {
-    description: `I've worked with a variety of technologies and tools to build cool things. Here are some of the projects I've worked on.`, // Markdown is supported
+    description: `As an undergraduate student, I’ve worked on many different areas of software development. These experiences have helped me build confidence, improve my technical skills, and understand what it’s like to work with real industry`, // Markdown is supported
     items: [
       {
-        title: "Software Developer",
+        title: "Quality Assurance Engineer - Internship",
         company: {
-          name: "Freelance",
-          image: "/logo.webp",
-          url: "https://github.com/TimWitzdam",
+          name: "Dropsuite",
         },
-        date: "2021 - Present",
+        date: "June 2024 - August 2024",
       },
       {
-        title: "Software Developer",
+        title: "Teaching Assistant",
         company: {
-          name: "Freelance",
-          image: "/logo.webp",
-          url: "https://github.com/TimWitzdam",
+          name: "Telkom University",
+
         },
-        date: "2019 - 2021",
+        date: "August 2023 - January 2025",
+      },
+      {
+        title: "Frontend Developer",
+        company: {
+          name: "FPS (FRI Punya Startup)",
+
+        },
+        date: "May 2023 - August 2023",
       },
     ],
   },
@@ -133,11 +141,11 @@ Facere quibusdam reiciendis, distinctio sunt praesentium error accusantium conse
 // Projects (/projects)
 export const projectsPageContent: ProjectPageContent = {
   seo: {
-    title: "Projects | Tim Witzdam",
+    title: "projects | adinfahru",
     description: "Check out what I've been working on.",
     image: identity.logo,
   },
-  subtitle: "Check out what I've been working on.",
+  subtitle: "I've worked with a variety of technologies and tools to build cool things. Here are some of the projects I've worked on.`",
   projects: [
     {
       title: "Project 1",
@@ -145,6 +153,7 @@ export const projectsPageContent: ProjectPageContent = {
       image: "/demo-2.jpg",
       year: "2024",
       url: "https://github.com/TimWitzdam",
+      highlighted: true,
     },
     {
       title: "Project 1",
@@ -166,7 +175,7 @@ export const projectsPageContent: ProjectPageContent = {
 // Blog (/blog)
 export const blogPageContent: BlogPageContent = {
   seo: {
-    title: "Blog | Tim Witzdam",
+    title: "blog | adinfahru",
     description: "Thoughts, stories and ideas.",
     image: identity.logo,
   },

@@ -6,6 +6,9 @@ import SocialLink from "../components/SocialLink.astro";
 import Link from "../components/Link.astro";
 import { getCollection } from "astro:content";
 import LogoWall from "../components/LogoWall.astro";
+import SplashCursor from "../components/SplashCursor/SplashCursor";
+import { projectsPageContent } from "../config";
+import ProjectCard from "../components/ProjectCard.astro";
 
 const posts = await getCollection("posts");
 posts.sort((a, b) => {
@@ -13,15 +16,16 @@ posts.sort((a, b) => {
   const dateB = new Date(b.data.pubDate).getTime();
   return dateB - dateA;
 });
-posts.splice(2)
+posts.splice(2);
 ---
 
 <Layout seo={homePageContent.seo}>
+  <!-- <SplashCursor client:visible /> -->
   <section class="mt-10 max-w-2xl mx-auto px-6">
     <h1 class="font-bold text-3xl mb-1">{identity.name}</h1>
     <p class="opacity-60 mb-3">{homePageContent.role}</p>
-    <div class="flex flex-col min-[520px]:flex-row gap-6 mb-10">
-      <div class="group flex justify-center gap-2 w-fit">
+    <div class="flex flex-col min-[520px]:flex-row gap-4 mb-10">
+      <div class="group flex justify-center gap-4 w-fit text-sm">
         {
           homePageContent.socialLinks.map((link) => (
             <SocialLink
@@ -34,7 +38,7 @@ posts.splice(2)
         }
       </div>
     </div>
-    <p class="mb-8 text-sm">
+    <p class="mb-5 text-sm text-justify">
       {homePageContent.description}
     </p>
     <div class="flex items-center gap-4 group w-fit text-xs">
@@ -48,6 +52,16 @@ posts.splice(2)
   <section class="mt-10 max-w-2xl mx-auto px-6">
     <h2 class="mb-8">Tech Stack</h2>
     <LogoWall />
+  </section>
+  <section class="mt-20 max-w-2xl mx-auto px-6">
+    <h2 class="mb-8">Featured Projects</h2>
+    <div class="grid grid-cols-1 gap-6">
+      {
+        projectsPageContent.projects
+          .filter((project) => project.highlighted)
+          .map((project) => <ProjectCard {...project} />)
+      }
+    </div>
   </section>
   <section class="mt-20 max-w-2xl mx-auto px-6">
     <h2 class="mb-8">Latest Posts</h2>
@@ -70,7 +84,9 @@ posts.splice(2)
                 {post.data.pubDate.toLocaleDateString()}
               </p>
               <h3 class="font-medium hover-underline">{post.data.title}</h3>
-              <p class="text-sm opacity-60 mt-2 mb-3">{post.data.description}</p>
+              <p class="text-sm opacity-60 mt-2 mb-3">
+                {post.data.description}
+              </p>
             </div>
           </a>
         ))

@@ -40,8 +40,6 @@ export type ResumeItem = {
   title: string;
   company: {
     name: string;
-    image: string;
-    url: string;
   };
   date: string;
 };
@@ -76,6 +74,7 @@ export type Project = {
   image: string;
   year: string;
   url: string;
+  highlighted?: boolean;
 };
 
 export type ProjectPageContent = {
