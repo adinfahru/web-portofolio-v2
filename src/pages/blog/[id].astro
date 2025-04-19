@@ -1,17 +1,25 @@
 ---
+// Tambahkan ini di atas
+import { getCollection, getEntry, render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
-import { getEntry, render } from "astro:content";
 import { Image } from "astro:assets";
 import { identity } from "../../config";
 
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+  return posts.map((post) => ({
+    params: { id: post.id },
+  }));
+}
+
 const { id } = Astro.params;
-const entry = await getEntry("posts", id as string);
+const entry = await getEntry("posts", id);
 
 if (!entry) {
   return Astro.redirect("/blog");
 }
 
-const { Content,  remarkPluginFrontmatter} = await render(entry);
+const { Content, remarkPluginFrontmatter } = await render(entry);
 ---
 
 <Layout
