@@ -74,7 +74,7 @@ export default function Greeting() {
         {/* initial text via JS */}
       </div>
       <p className="text-2xl">
-        I'm <strong>adinfahru</strong>
+        I'm <strong>Fahru</strong>
       </p>
     </div>
   );  

@@ -9,7 +9,7 @@ import type {
 } from "./types/config";
 
 export const identity: Identity = {
-  name: "adinfahru",
+  name: "Fahrudin",
   logo: "/code.png",
   email: "mohamad.fahrudin18@gmail.com",
 };
@@ -60,7 +60,7 @@ export const homePageContent: HomePageContent = {
       "Full time student from Germany who loves building cool things using code.",
     image: identity.logo,
   },
-  role: "student & software engineer",
+  role: "student & junior software engineer",
   location: "bandung, indonesia",
   description:
     "Hi!, I'm Mohamad Fahrudin — a student who loves building full-stack web apps, with a special interest in front-end. I enjoy crafting clean, user-friendly interfaces, and lately I've been diving into AI and machine learning to explore how they can make apps smarter and more intuitive.",
@@ -159,7 +159,7 @@ export const projectsPageContent: ProjectPageContent = {
     {
       title: "simple-webRTC", 
       description: "A minimal WebRTC video calling app built with plain HTML, JavaScript, and a Node.js signaling server via Socket.io. Supports one-on-one video calls between users using peer-to-peer connection.",
-      image: "/webv2.png",
+      image: "/webrtc.png",
       year: "2025",
       url: "https://github.com/adinfahru/simple-WebRTC",
       highlighted: true,
@@ -167,17 +167,17 @@ export const projectsPageContent: ProjectPageContent = {
     },
     {
       title: "learnly",
-      description: "alearning quiz platform for senior high school in bandung.",
-      image: "/webv2.png",
+      description: "a learning quiz platform for senior high school in bandung. Created a full-stack LMS to support quiz creation, role-based dashboards, and assignment submissions. Integrated authentication with JWT and responsive front-end components for an interactive learning experience",
+      image: "/learnly.png",
       year: "2024",
       url: "https://github.com/adinfahru/learnly",
-      tags: ["react", "django", "tailwind", 'shadcn-ui'],
+      tags: ["react", "contextAPI", "django", "tailwind", 'shadcn-ui', 'sqlite'],
       highlighted: true,
     },
     {
       title: "dme-qbo-automation",
       description: "a QA automation project built during my internship, focusing on automating test scenarios for QuickBooks Online using Cucumber and Selenium WebDriver. The goal was to improve testing efficiency and reduce manual effort by implementing behavior-driven development (BDD) practices.",
-      image: "/webv2.png",
+      image: "/code.png",
       year: "2024",
       url: "https://github.com/adinfahru/dme-qbo-automation",
       tags: ["cucumber", "selenium", "javascript", "nodejs"],
@@ -185,7 +185,7 @@ export const projectsPageContent: ProjectPageContent = {
     {
       title: "personal-website-v1",
       description: "this is my first personal website",
-      image: "/webv2.png",
+      image: "/code.png",
       year: "2024",
       url: "https://adinfahru.vercel.app/",
       tags: ["nextjs", "typescript", "tailwind"]
@@ -193,7 +193,7 @@ export const projectsPageContent: ProjectPageContent = {
     {
       title: "role-playing-game",
       description: "my first game development project, a challange course from freecodecamp",
-      image: "/webv2.png",
+      image: "/code.png",
       year: "2024",
       url: "https://role-playing-games.netlify.app/",
       tags: ["html", "javascript", "css"]
@@ -201,19 +201,19 @@ export const projectsPageContent: ProjectPageContent = {
     {
       title: "k-rent",
       description: "this final project web development course, aims to develop a web-based platform for student vehicle rental services",
-      image: "/webv2.png",
+      image: "/code.png",
       year: "2023",
       url: "https://github.com/adinfahru/k-rent",
-      tags: ["laravel", "tailwind", "daisyui"]
+      tags: ["laravel", "tailwind", "daisyui", 'mysql']
     },
     {
       title: "phising-url-detection",
       description: "phishing url detection with three different machine learning model's (gradient boosting, multilayer perceptron, catboost), for Turnamen Sains Data Nasional 2023.",
-      image: "/webv2.png",
+      image: "/code.png",
       year: "2023",
       url: "https://github.com/adinfahru/phishing-url-detection",
       tags: ["python", "flask", "bootstrap"],
-      highlighted: true
+      highlighted: false,
     },
   ],
 };
